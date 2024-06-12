@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar sesión</title>
+    <title>Registrarse</title>
     <link rel="stylesheet" href="css/log.css">
     <link rel="stylesheet" href="css/style.css">
-    
+
     <!-- Favicon -->
     <link href="icon.ico" rel="icon">
 </head>
@@ -31,21 +31,34 @@
         </nav>
     </div>
     <!-- Navbar End -->
+     
     <div class="container">
-        <form action="#">
-            <h2>Iniciar sesión</h2>
+
+        <form action="php/register.php" method="post" class="form">
+            <h2>Registrarse</h2>
+
             <div class="input-group">
                 <label for="username">Usuario</label>
-                <input type="text" id="username" name="username" required>
+                <input type="text" class="input" id="nombre" name="nombre" placeholder="Nombre de Usuario" required>
             </div>
+
+            <div class="input-group">
+                <label for="email">Correo electrónico</label>
+                <input type="email" class="input" id="correo" name="correo" placeholder="Email" required>
+            </div>
+
             <div class="input-group">
                 <label for="password">Contraseña</label>
-                <input type="password" id="password" name="password" required>
+                <input type="password" class="input" id="contraseña" name="contraseña" placeholder="Contraseña" required>
             </div>
-            <button type="submit">Iniciar sesión</button>
+            
+            <button type="submit">Registrarse</button>
         </form>
-        <p>¿No tienes una cuenta? <a href="register.html">Regístrate</a></p>
+
+        <p>¿Ya tienes una cuenta? <a href="login.html">Inicia sesión</a></p>
+
     </div>
+
     <script src="js/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
